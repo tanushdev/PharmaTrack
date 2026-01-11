@@ -2,7 +2,7 @@
 
 **PharmaTrack** is an enterprise-grade batch traceability system designed to ensure the safety, integrity, and compliance of pharmaceutical products. It features real-time production monitoring, global distribution tracking, and FDA-compliant audit logging.
 
-## 🚀 Key Features
+## Key Features
 
 *   **SQLite Backend Persistence**: Data is securely stored on disk ("without caching") using a specialized SQLite database.
 *   **Real-Time Production Line**: Visual monitoring of manufacturing throughput, line utilization, and batch status.
@@ -10,13 +10,13 @@
 *   **Compliance & Audit**: Automatic `audit_logs` for every batch creation, dispatch, or recall event, simulating an Oracle `DRUG_TRAK` environment.
 *   **Recall Center**: "One-Click" batch recall system that triggers quarantine protocols across the entire supply chain.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 *   **Frontend**: React (Vite), Lucide-React Icons, Glassmorphism UI
 *   **Backend**: Node.js, Express.js
 *   **Database**: SQLite3 (Persistent file storage)
 
-## 🏁 Getting Started
+## Getting Started
 
 To run the full application (Frontend + Backend), you will need two terminal windows.
 
@@ -40,7 +40,7 @@ npm run dev
 ```
 *Port: 5173 (usually)*
 
-## 📡 API Architecture
+## API Architecture
 
 The system uses a RESTful API to communicate with the SQLite database:
 
@@ -52,6 +52,6 @@ The system uses a RESTful API to communicate with the SQLite database:
 | `POST` | `/api/recall` | Process a recall for a specific drug name. |
 | `GET` | `/api/validate` | Run system validation checks. |
 
-## 📦 Default Seed Data
+## Default Seed Data
 
 The system comes pre-seeded with **15 realistic medication batches** across various production lines (Solid Dosage, Injectables, Packaging) to demonstrate the analytics capabilities immediately upon start.
