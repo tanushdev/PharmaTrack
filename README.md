@@ -20,21 +20,11 @@
 
 To run the full application (Frontend + Backend), you will need two terminal windows.
 
-### 1. Start the Backend Server
+### 1. Start the Frontend and Backend Server
 This handles the database connections and API endpoints.
 
 ```bash
 cd server
-npm install  # First time only
-node server.js
-```
-*Port: 5000*
-
-### 2. Start the Frontend Client
-This launches the user interface.
-
-```bash
-cd client
 npm install  # First time only
 npm run dev
 ```
